@@ -15,7 +15,6 @@
 
 using namespace std;
 
-
 struct STUDENT_DATA {
 	string firstName;
 	string lastName;
@@ -49,6 +48,12 @@ int main() {
 	else {
 		cout << "Error opening file: StudentData.txt" << endl;
 	}
+
+	#ifdef _DEBUG
+		for (int i = 0; i < students.size(); i++) {
+			cout << students[i].lastName << "," << students[i].firstName << endl;
+		}
+	#endif
 
 	return 1;
 }
