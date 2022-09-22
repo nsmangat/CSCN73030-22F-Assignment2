@@ -133,6 +133,9 @@
     <Text Include="StudentData.txt" />
     <Text Include="StudentData_Emails.txt" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source.h" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
